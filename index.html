@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Forms</title>
+	<style>
+	
+	h1, h2, h3, p{
+		color: darkred;font-family: math;
+	}
+	label, button, option{
+		color: brown ; font-family: monospace;
+	}
+	
+
+		
+	</style>
+
+
+
+</head>
+<body bgcolor="Burlywood">
+	<fieldset><legend><h1>DATA MAHASISWA</h1></legend>
+	<form method="post" action="/action_page.php">
+		<label for="name">Nama :<br></label>
+		<input type="text" name="name" placeholder="Nama" id="name" required>
+		<br><br>
+		
+		<label for="NIM">NIM :<br></label>
+		<input type="number" name="NIM" placeholder="NIM" id="NIM" required>
+		<br><br>
+
+		<label for="date">Tanggal lahir<br></label>
+		<input type="date" name="date" id="date" required>
+		<br><br>
+
+		<label for="email">Email :<br></label>
+		<input type="email" name="email" placeholder="Email" id="email" required>
+		<br><br>
+
+		<label for="password">Password :<br></label>
+		<input type="password" name="password" placeholder="Password" id="password" required>
+		<br><br>
+
+        <p><h3>Jenis kelamin :</h3></p>
+		
+		<label for="jenis kelamin">
+		    <input type="radio" name="jenis kelamin" value="pria" id="jenis kelamin" required>Laki laki</label>
+		<br>
+		<label for="jenis kelamin">
+		    <input type="radio" name="jenis kelamin" value="wanita" id="jenis kelamin">Perempuan</label>
+	    <br><br>
+	    
+	    <p><h3>Kegiatan yang digemari :</h3></p>
+	    	<label><input type="checkbox" name="kegiatan yang digemar" value="Membaca buku">Membaca buku</label><br>	
+	    	<label><input type="checkbox" name="kegiatan yang digemar" value="Berolahraga">Berolahraga</label><br>
+	    	<label><input type="checkbox" name="kegiatan yang digemar" value="Nonton film">Nonton film</label><br>
+	    	<label><input type="checkbox" name="kegiatan yang digemar" value="Bermain games">Bermain games</label><br>
+
+	    <p>Bahasa pemrograman yang ingin ditekuni :
+	    	<label>
+	    	<select>
+	    	<option value="Python">Python</option>
+	    	<option value="C++">C++</option>
+	    	<option value="Javascript">Javascript</option>
+	        </select>
+	        </label></p><br>
+
+	    <h2><i>Comments</i></h2>
+	    <label><p>Pendapat anda tentang website ini :</p><textarea placeholder="Type here!"></textarea></label><br><br><br>
+
+	    <p><input type="reset" value="Reset"></p>
+	    <p><input type="submit" value="Submit"></p>
+	    
+	  
+	    <br><br>
+
+	  		<p><h3 text align="center">Website dibuat oleh:</h3></p>
+	  		<p><h3 text align="center">Nicholas Salim</h3></p>
+	  		<p><h3 text align="center">Mahasiswa Universitas Sumatera Utara
+	  		</h3></p>
+
+
+
+	    
+
+
+		
+	</form>
+	</fieldset>
+
+</body>
+</html>
